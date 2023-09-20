@@ -1,0 +1,69 @@
+---
+import Card from "./Card.astro";
+---
+
+<section>
+    <article class="header">
+    <div>
+        <p>knap</p>
+        <p>knap</p>
+    </div>
+    <div>
+        <a href="/#">Tilmeld dig</a>
+        <button>Log på</button>
+    </div>
+</article>
+<article class="playfocus">
+    <div>
+    <h1>Spotify-playlister</h1>
+    <h2>Vis alle</h2>
+    </div>
+    <Card />
+</article>
+</article>
+<article class="playfocus">
+    <div>
+    <h1>Fokus</h1>
+    <h2>Vis alle</h2>
+    </div>
+    <Card />
+</article>
+</section>
+
+<style>
+    .header{
+        background-color: #101010;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem;
+    }
+
+    .header div{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    a{ 
+        color:#7b7b7b;
+        font-size: 20px;
+        min-width: fit-content;
+    }
+
+    button{
+        width: 100%;
+        border-radius: 40px;
+        padding: 1rem;
+        font-size: 14px;
+        background-color: #fff;
+    }
+
+    .playfocus div{
+        padding: .8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+</style>

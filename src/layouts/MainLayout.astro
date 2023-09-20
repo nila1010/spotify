@@ -2,7 +2,8 @@
 import "../styles/main.css";
 import Navigation from "../components/Navigation.astro";
 import Ditbibliotek from "../components/Ditbibliotek.astro";
-import Spotifyplaylister from "../components/Spotifyplaylister.asto";
+import Sp from "../components/Sp.astro";
+
 ---
 
 <html lang="en">
@@ -15,10 +16,15 @@ import Spotifyplaylister from "../components/Spotifyplaylister.asto";
 	</head>
 	<body>
         <main>
+			<article class="navigation">
             <Navigation />
+			</article>
+			<article class="bibliotek">
 			<Ditbibliotek />
-			<Spotifyplaylister />
+			</article>
+			<article class="playlist">
+			<Sp />
+			</article>
         </main>
-		
 	</body>
 </html>
