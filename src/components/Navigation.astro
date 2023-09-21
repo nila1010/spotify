@@ -3,22 +3,35 @@
 ---
 
  <nav>
-    <h1>Spotify</h1>
-    <a href="/#">Hjem</a>
-    <a href="/#">Søg</a>
+    <img src="/icons/logow.svg" alt="logo">
+    <a href="/#"><img src="/icons/homew-filled.svg" alt="home">Hjem</a>
+    <a href="/#"><img src="/icons/searchg-icon.svg" alt="search">Søg</a>
 </nav>
 
 <style>
     nav{
-        margin: 1.5rem 0 1.5rem 1rem;
+        margin: .3rem;
+        border-radius: 15px;
+        background: #121212;
+        padding: 2rem 1rem;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
-        
+        gap: 1.5rem; 
     }
 
     a{
         color: #fff;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    img{
+        width: 30%;
+    }
+
+    a img{
+        width: 7%;
     }
     
 </style>

@@ -4,32 +4,33 @@ import Button from "./Button.astro";
 
 <article>
     <div>
-    <h1>Dit bibliotek</h1>
+    <h1><img src="/icons/libraryg-icon.svg" alt="library">Dit bibliotek</h1>
     <p>+</p>
     </div>
     <div class="indhold">
         <h2>Opret din første playliste</h1>
         <h3>Det er nemt - vi skal nok hjælpe dig</h2>
             <Button variant="primary" size="medium">Opret playliste</Button>
-       <!--  <button class="knap">Opret playliste</button> -->
     </div>
     <div class="indhold">
         <h2>Lad os finde nogle podcast, du kan følge</h1>
         <h3>Vi holder dig orienteret om nye episoder</h2>
             <Button variant="primary" size="medium">Udforsk podcast</Button>
-        <!-- <button class="knap">Udforsk podcast</button> -->
     </div>
 </article>
 
 <style>
     article{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 1.5rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: .3rem;
+    border-radius: 15px;
+    background: #121212;
+    padding: 2rem 1rem;
     }
     article div:first-child{
-        display: flex;
+    display: flex;
     justify-content: space-between;}
 .indhold{
     display: flex;
@@ -40,12 +41,21 @@ import Button from "./Button.astro";
     padding: 1rem;
     }
 
-   /*  .knap{
-        width: fit-content;
-        border-radius: 40px;
-        padding: .5rem;
-        font-size: 14px;
-        background-color: #fff;
-    } */
+    img{
+        width: 10%;
+    }
+
+    h1{
+        color: #787878;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 40px;
+        color: #787878;
+    }
 
     </style>
