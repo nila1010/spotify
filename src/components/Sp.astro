@@ -1,5 +1,6 @@
 ---
 import Card from "./Card.astro";
+import Button from "./Button.astro";
 ---
 
 <section>
@@ -10,7 +11,7 @@ import Card from "./Card.astro";
     </div>
     <div>
         <a href="/#">Tilmeld dig</a>
-        <button>Log på</button>
+        <Button variant="primary" size="large">Log på</Button>
     </div>
 </article>
 <article class="playfocus">
@@ -18,7 +19,13 @@ import Card from "./Card.astro";
     <h1>Spotify-playlister</h1>
     <h2>Vis alle</h2>
     </div>
+    <div>
     <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    </div>
 </article>
 </article>
 <article class="playfocus">
@@ -26,7 +33,13 @@ import Card from "./Card.astro";
     <h1>Fokus</h1>
     <h2>Vis alle</h2>
     </div>
+    <div>
     <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    </div>
 </article>
 </section>
 
@@ -43,10 +56,10 @@ import Card from "./Card.astro";
         display: flex;
         gap: 1rem;
         align-items: center;
-    }
+            }
 
     a{ 
-        color:#7b7b7b;
+        color:#a7a7a7;
         font-size: 20px;
         min-width: fit-content;
     }
@@ -59,10 +72,20 @@ import Card from "./Card.astro";
         background-color: #fff;
     }
 
-    .playfocus div{
+    .playfocus{
+        padding: 0 0 1rem 0;
+    }
+
+    .playfocus div:nth-child(1){
         padding: .8rem;
         display: flex;
         justify-content: space-between;
+    }
+
+    .playfocus div:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 
 

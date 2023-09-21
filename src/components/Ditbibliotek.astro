@@ -1,5 +1,5 @@
 ---
-
+import Button from "./Button.astro";
 ---
 
 <article>
@@ -10,12 +10,14 @@
     <div class="indhold">
         <h2>Opret din første playliste</h1>
         <h3>Det er nemt - vi skal nok hjælpe dig</h2>
-        <button class="knap">Opret playliste</button>
+            <Button variant="primary" size="medium">Opret playliste</Button>
+       <!--  <button class="knap">Opret playliste</button> -->
     </div>
     <div class="indhold">
         <h2>Lad os finde nogle podcast, du kan følge</h1>
         <h3>Vi holder dig orienteret om nye episoder</h2>
-        <button class="knap">Udforsk podcast</button>
+            <Button variant="primary" size="medium">Udforsk podcast</Button>
+        <!-- <button class="knap">Udforsk podcast</button> -->
     </div>
 </article>
 
@@ -38,12 +40,12 @@
     padding: 1rem;
     }
 
-    .knap{
+   /*  .knap{
         width: fit-content;
         border-radius: 40px;
         padding: .5rem;
         font-size: 14px;
         background-color: #fff;
-    }
+    } */
 
     </style>
