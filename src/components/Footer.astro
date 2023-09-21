@@ -1,0 +1,32 @@
+---
+import Button from "./Button.astro";
+---
+
+<footer>
+    <div>
+    <h2>EKSEMPLER PÅ SPOTIFY</h2>
+    <h1>Tilmeld dig for at få ubegrænsede sange og podcasts med lejlighedsvise reklamer. Du skal ikke bruge kreditkort.</h1>
+</div>
+<Button variant="primary" size="medium">Tilmeld dig gratis</Button>
+</footer>
+
+<style>
+footer{
+    display: flex;
+    padding: 1rem;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    max-height: 5.8rem;
+    margin: .5rem;
+    justify-content: space-between;
+}
+h2{
+  font-size: 12px;
+}
+
+h1{
+    font-size: 16px;
+    margin-top: .8rem;
+    max-width: 65ch;
+    line-height: 25px;
+}
+</style>

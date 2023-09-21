@@ -1,3 +1,16 @@
+/*FONT
+font-family: router, sans-serif;
+font-weight: 500 + 700;
+font-style: normal;
+*/
+
+:root {
+  --fontgenerel: "router", sans-serif;
+
+  --backgroundcolor: #000;
+  --textcolor: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,18 +18,28 @@
 }
 
 body {
-  background-color: #000;
+  background-color: var(--backgroundcolor);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
 }
 
 h1,
 h2,
 h3 {
   color: #fff;
-  font-family: "Arial";
+  font-family: var(--fontgenerel);
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 h2 {
@@ -25,11 +48,11 @@ h2 {
 
 a {
   text-decoration: none;
-  font-family: "Arial";
+  font-family: var(--fontgenerel);
 }
 
 p {
-  color: #fff;
+  color: var(--textcolor);
 }
 
 img {
@@ -37,13 +60,8 @@ img {
 }
 
 button {
-  font-family: "Arial";
-}
-
-main {
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  gap: 0.2rem;
+  font-family: var(--fontgenerel);
+  font-weight: 500;
 }
 
 .navigation {
@@ -53,6 +71,5 @@ main {
 }
 
 .playlist {
-  grid-column: 2;
-  grid-row: 1/2;
+  flex-grow: 1;
 }
