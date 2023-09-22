@@ -19,7 +19,7 @@ import Button from './Button.astro'
 			<h1>Spotify-playlister</h1>
 			<h2>Vis alle</h2>
 		</div>
-		<div>
+		<div class="grid-container">
 			<Card />
 			<Card />
 			<Card />
@@ -33,7 +33,7 @@ import Button from './Button.astro'
 			<h1>Fokus</h1>
 			<h2>Vis alle</h2>
 		</div>
-		<div>
+		<div class="grid-container">
 			<Card />
 			<Card />
 			<Card />
@@ -43,6 +43,16 @@ import Button from './Button.astro'
 	</article>
 </section>
 <style>
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+
+		/* hide wrapping rows */
+		grid-template-rows: min-content;
+		grid-auto-rows: 0;
+		gap: 0 var(--space-lg);
+		overflow: hidden;
+	}
 	section {
 		margin: 0.3rem;
 		border-radius: 15px;
@@ -78,7 +88,6 @@ import Button from './Button.astro'
 		gap: 1.5rem;
 		align-items: center;
 	}
-
 	button {
 		width: 100%;
 		border-radius: 40px;
@@ -89,16 +98,5 @@ import Button from './Button.astro'
 
 	.playfocus {
 		padding: 0 0 1rem 0;
-	}
-
-	.playfocus div:nth-child(1) {
-		padding: 0.8rem;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.playfocus div:last-child {
-		display: flex;
-		flex-wrap: wrap;
 	}
 </style>
