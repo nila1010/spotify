@@ -2,36 +2,60 @@
 
 ---
 
- <nav>
-    <img src="/icons/logow.svg" alt="logo">
-    <a href="/#"><img src="/icons/homew-filled.svg" alt="home">Hjem</a>
-    <a href="/search"><img src="/icons/searchg-icon.svg" alt="search">Søg</a>
+<nav>
+	<img src="/icons/logow.svg" alt="logo" />
+	<a class="link" href="/#"><img class="home" src="/icons/homeg.svg" alt="home" />Hjem</a>
+	<a class="link" href="/search"
+		><img class="search" src="/icons/searchg-icon.svg" alt="search" />Søg</a
+	>
 </nav>
 
 <style>
-    nav{
-        margin: .3rem;
-        border-radius: 15px;
-        background: #121212;
-        padding: 2rem 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem; 
-    }
+	nav {
+		margin: 0.3rem;
+		border-radius: 15px;
+		background: #121212;
+		padding: 2rem 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
 
-    a{
-        color: #fff;
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-    }
+	a {
+		color: #787878;
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+	}
 
-    img{
-        width: 25%;
-    }
+	img {
+		width: 25%;
+	}
 
-    a img{
-        width: 7%;
-    }
-    
+	a img {
+		width: 7%;
+	}
+
+	.active {
+		color: #fff;
+	}
 </style>
+
+<script>
+	const links = document.querySelectorAll('nav a')
+	const home = document.querySelector('.home')
+	const search = document.querySelector('.search')
+
+	links.forEach((link) => {
+		if (link.href === window.location.href) {
+			link.classList.add('active')
+		}
+		if (link.classList.contains('active')) {
+			home.src = '/icons/homeg.svg'
+			search.src = '/icons/search-filledh.svg'
+		} else {
+			home.src = '/icons/homew-filled.svg'
+			search.src = '/icons/searchg-icon.svg'
+		}
+	})
+</script>

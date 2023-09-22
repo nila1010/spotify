@@ -1,109 +1,104 @@
 ---
-import Card from "./Card.astro";
-import Button from "./Button.astro";
+import Card from './Card.astro'
+import Button from './Button.astro'
 ---
 
 <section>
-    <article class="header">
-    <div>
-        <img src="/icons/backg-btn.svg" alt="back button">
-        <img src="/icons/forwardg-btn.svg" alt="forward button">
-    </div>
-    <div>
-        <a href="/#">Tilmeld dig</a>
-        <Button variant="primary" size="large">Log på</Button>
-    </div>
-</article>
-<article class="playfocus">
-    <div>
-    <h1>Spotify-playlister</h1>
-    <h2>Vis alle</h2>
-    </div>
-    <div>
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    </div>
-</article>
-</article>
-<article class="playfocus">
-    <div>
-    <h1>Fokus</h1>
-    <h2>Vis alle</h2>
-    </div>
-    <div>
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    </div>
-</article>
+	<article class="header">
+		<div>
+			<img src="/icons/backg-btn.svg" alt="back button" />
+			<img src="/icons/forwardg-btn.svg" alt="forward button" />
+		</div>
+		<div>
+			<a href="/#">Tilmeld dig</a>
+			<Button variant="primary" size="large">Log på</Button>
+		</div>
+	</article>
+	<article class="playfocus">
+		<div>
+			<h1>Spotify-playlister</h1>
+			<h2>Vis alle</h2>
+		</div>
+		<div>
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+		</div>
+	</article>
+
+	<article class="playfocus">
+		<div>
+			<h1>Fokus</h1>
+			<h2>Vis alle</h2>
+		</div>
+		<div>
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+			<Card />
+		</div>
+	</article>
 </section>
-
 <style>
-     section{
-        margin: .3rem;
-        border-radius: 15px;
-        background: #121212;
-        min-height: 99%;
-    }
+	section {
+		margin: 0.3rem;
+		border-radius: 15px;
+		background: #121212;
+		min-height: 99%;
+	}
 
-    h1{
-        font-size: 23px;
-        font-weight: 700;
-    }
-   h2{
-    color: #a7a7a7;
-    font-size: 14px;
-   }
+	h1 {
+		font-size: 23px;
+		font-weight: 700;
+	}
+	h2 {
+		color: #a7a7a7;
+		font-size: 14px;
+	}
 
-      a{ 
-        color:#a7a7a7;
-        font-size: 16px;
-        min-width: fit-content;
-    }
+	a {
+		color: #a7a7a7;
+		font-size: 16px;
+		min-width: fit-content;
+	}
 
-    .header{
-        background-color: #101010;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: .8rem;
-    }
+	.header {
+		background-color: #101010;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.8rem;
+	}
 
-    .header div{
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-            }
+	.header div {
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
+	}
 
- 
-    button{
-        width: 100%;
-        border-radius: 40px;
-        padding: 1rem;
-        font-size: 14px;
-        background-color: #fff;
-    }
+	button {
+		width: 100%;
+		border-radius: 40px;
+		padding: 1rem;
+		font-size: 14px;
+		background-color: #fff;
+	}
 
-    .playfocus{
-        padding: 0 0 1rem 0;
-    }
+	.playfocus {
+		padding: 0 0 1rem 0;
+	}
 
-    .playfocus div:nth-child(1){
-        padding: .8rem;
-        display: flex;
-        justify-content: space-between;
-    }
+	.playfocus div:nth-child(1) {
+		padding: 0.8rem;
+		display: flex;
+		justify-content: space-between;
+	}
 
-    .playfocus div:last-child{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-   
-
+	.playfocus div:last-child {
+		display: flex;
+		flex-wrap: wrap;
+	}
 </style>

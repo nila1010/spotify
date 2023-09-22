@@ -5,71 +5,71 @@ font-style: normal;
 */
 
 :root {
-  --fontgenerel: "router", sans-serif;
+	--fontgenerel: 'router', sans-serif;
 
-  --backgroundcolor: #000;
-  --textcolor: #fff;
+	--backgroundcolor: #000;
+	--textcolor: #fff;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: var(--backgroundcolor);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+	background-color: var(--backgroundcolor);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 main {
-  flex-grow: 1;
-  display: flex;
+	flex-grow: 1;
+	display: flex;
 }
 
 h1,
 h2,
 h3 {
-  color: #fff;
-  font-family: var(--fontgenerel);
-  font-weight: 500;
+	color: #fff;
+	font-family: var(--fontgenerel);
+	font-weight: 500;
 }
 
 h3 {
-  font-size: 13px;
-  line-height: 20px;
+	font-size: 13px;
+	line-height: 20px;
 }
 
 h2 {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 a {
-  text-decoration: none;
-  font-family: var(--fontgenerel);
+	text-decoration: none;
+	font-family: var(--fontgenerel);
 }
 
 p {
-  color: var(--textcolor);
+	color: var(--textcolor);
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 button {
-  font-family: var(--fontgenerel);
-  font-weight: 500;
+	font-family: var(--fontgenerel);
+	font-weight: 500;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
-  grid-column: 1;
+	display: flex;
+	flex-direction: column;
+	grid-column: 1;
 }
 
 .playlist {
-  flex-grow: 1;
+	flex-grow: 1;
 }

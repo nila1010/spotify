@@ -1,80 +1,77 @@
 ---
-import Button from "./Button.astro";
+import Button from './Button.astro'
 ---
 
 <article>
-    <div>
-    <h1><img src="/icons/libraryg-icon.svg" alt="library">Dit bibliotek</h1>
-    <p>+</p>
-    </div>
-    <div class="indhold">
-        <h2>Opret din første playliste</h1>
-        <h3>Det er nemt - vi skal nok hjælpe dig</h2>
-            <Button variant="primary" size="medium">Opret playliste</Button>
-    </div>
-    <div class="indhold">
-        <h2>Lad os finde nogle podcast, du kan følge</h1>
-        <h3>Vi holder dig orienteret om nye episoder</h2>
-            <Button variant="primary" size="medium">Udforsk podcast</Button>
-    </div>
+	<div>
+		<h1><img src="/icons/libraryg-icon.svg" alt="library" />Dit bibliotek</h1>
+		<p>+</p>
+	</div>
+	<div class="indhold">
+		<h2>Opret din første playliste</h2>
+		<h3>Det er nemt - vi skal nok hjælpe dig</h3>
+		<Button variant="primary" size="medium">Opret playliste</Button>
+	</div>
+	<div class="indhold">
+		<h2>Lad os finde nogle podcast, du kan følge</h2>
+		<h3>Vi holder dig orienteret om nye episoder</h3>
+		<Button variant="primary" size="medium">Udforsk podcast</Button>
+	</div>
 </article>
 
-
 <style>
+	article {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin: 0.3rem;
+		border-radius: 15px;
+		background: #121212;
+		padding: 1rem 0.5rem;
+		flex-grow: 1;
+	}
+	article div:first-child {
+		display: flex;
+		margin-left: 1rem;
+		justify-content: space-between;
+	}
 
-     article{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: .3rem;
-    border-radius: 15px;
-    background: #121212;
-    padding: 1rem .5rem;
-    flex-grow: 1;
-    }
-    article div:first-child{
-    display: flex;
-    margin-left: 1rem;
-    justify-content: space-between;}
+	.indhold {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		background-color: #242424;
+		border-radius: 15px;
+		padding: 1rem;
+	}
 
-.indhold{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #242424;
-    border-radius: 15px;
-    padding: 1rem;
-    }
+	img {
+		width: 8%;
+	}
 
-    img{
-        width: 8%;
-    }
+	h1 {
+		color: #787878;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 16px;
+		font-weight: 700;
+	}
 
-    h1{
-        color: #787878;
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-        font-size: 16px;
-        font-weight: 700;
-    }
+	h1:hover {
+		transition: ease-in 0.2s;
+		color: #fff;
+		cursor: pointer;
+	}
 
-    h1:hover{
-        transition: ease-in .2s;
-        color: #fff;
-        cursor: pointer;
-    }
+	p {
+		font-size: 30px;
+		color: #787878;
+	}
 
-    p{
-        font-size: 30px;
-        color: #787878;
-    }
-
-    p:hover{
-        color: #fff;
-         transition: ease-in .2s;
-         cursor: pointer;
-}
-
-
-    </style>
+	p:hover {
+		color: #fff;
+		transition: ease-in 0.2s;
+		cursor: pointer;
+	}
+</style>
