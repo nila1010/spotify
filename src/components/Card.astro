@@ -2,14 +2,22 @@
 
 ---
 
-<article>
+<article class="card">
 	<img src="/cover1.jpg" alt="cover" />
 	<h2>Today's Top Hits</h2>
 	<h3>Jung Kook is on top of the Hottes 50!</h3>
+	<button class="play-btn">
+		<svg viewBox="0 0 24 24"
+			><path
+				d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+			></path></svg
+		>
+	</button>
 </article>
 
 <style>
 	article {
+		position: relative;
 		margin: 1rem 0 0 1.5rem;
 		background-color: #1e1e1e;
 		display: flex;
@@ -26,5 +34,30 @@
 
 	h3 {
 		color: #a7a7a7;
+	}
+
+	.play-btn {
+		position: absolute;
+		top: 35%;
+		left: 55%;
+		background-color: #1ed760;
+		color: black;
+		border-radius: 50px;
+		transition: 0.3s;
+	}
+
+	.play-btn:not(.card:hover *) {
+		translate: 0;
+		opacity: 0;
+	}
+
+	.play-btn:hover {
+		background: ##1fdf64;
+		scale: 1.04;
+	}
+
+	.play-btn svg {
+		width: 50px;
+		height: 50px;
 	}
 </style>
