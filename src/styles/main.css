@@ -67,8 +67,15 @@ button {
 .navigation {
 	display: flex;
 	flex-direction: column;
-	grid-column: 1;
 }
+
+.sectiontemp {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+/*INDEX
+----------------*/
 
 .playlist {
 	flex-grow: 1;

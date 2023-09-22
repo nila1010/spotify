@@ -1,0 +1,32 @@
+---
+import Button from './Button.astro'
+const { search } = Astro.props
+---
+
+<article class="header">
+	<div>
+		<img src="/icons/backg-btn.svg" alt="back button" />
+		<img src="/icons/forwardg-btn.svg" alt="forward button" />
+	</div>
+	{search === 'true' && <input type="text" />}
+	<div>
+		<a href="/#">Tilmeld dig</a>
+		<Button variant="primary" size="large">Log på</Button>
+	</div>
+</article>
+
+<style>
+	.header {
+		background-color: #101010;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.8rem;
+	}
+
+	.header div {
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
+	}
+</style>

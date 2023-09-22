@@ -4,16 +4,6 @@ import Button from './Button.astro'
 ---
 
 <section>
-	<article class="header">
-		<div>
-			<img src="/icons/backg-btn.svg" alt="back button" />
-			<img src="/icons/forwardg-btn.svg" alt="forward button" />
-		</div>
-		<div>
-			<a href="/#">Tilmeld dig</a>
-			<Button variant="primary" size="large">Log på</Button>
-		</div>
-	</article>
 	<article>
 		<div class="playfocus">
 			<h1>Spotify-playlister</h1>
@@ -73,27 +63,6 @@ import Button from './Button.astro'
 		color: #a7a7a7;
 		font-size: 16px;
 		min-width: fit-content;
-	}
-
-	.header {
-		background-color: #101010;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0.8rem;
-	}
-
-	.header div {
-		display: flex;
-		gap: 1.5rem;
-		align-items: center;
-	}
-	button {
-		width: 100%;
-		border-radius: 40px;
-		padding: 1rem;
-		font-size: 14px;
-		background-color: #fff;
 	}
 
 	.playfocus {
