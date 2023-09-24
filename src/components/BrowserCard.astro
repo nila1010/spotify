@@ -1,15 +1,52 @@
 ---
-const { title } = Astro.props
+const { title, icon } = Astro.props
 ---
 
-<div>
+<div class="outer">
+	{
+		icon === 'new' && (
+			<div class="new">
+				<p>New</p>
+			</div>
+		)
+	}
 	<h2>{title}</h2>
+	<div class="inner"></div>
 </div>
 
 <style>
-	div {
+	.outer {
+		position: relative;
 		height: 200px;
 		width: 200px;
 		background-color: brown;
+		overflow: hidden;
+	}
+
+	.inner {
+		position: absolute;
+		right: -22px;
+		bottom: -2px;
+		transform: rotate(20deg);
+		height: 100px;
+		width: 100px;
+		background-color: beige;
+	}
+	.new {
+		background-color: rgb(46, 46, 192);
+		height: 20px;
+		width: 50px;
+		display: flex;
+		place-content: center;
+		align-items: center;
+		position: absolute;
+		right: 10px;
+		top: 7px;
+	}
+
+	h2 {
+		margin: 1.2rem 0 0 1rem;
+		font-size: 22px;
+		font-weight: 700;
 	}
 </style>

@@ -3,14 +3,14 @@ import BrowserCard from './BrowserCard.astro'
 ---
 
 <section>
-	<h1>Browser All</h1>
-	<article>
-		<BrowserCard title="Pop" />
+	<h1>Udforsk alle</h1>
+	<article class="grid-containerb">
+		<BrowserCard title="Pop" icon="new" />
 		<BrowserCard title="Rock" />
-		<BrowserCard title="Soul" />
+		<BrowserCard title="Soul" icon="new" />
 		<BrowserCard title="Dance" />
-		<BrowserCard title="Rock" />
-		<BrowserCard title="Elektronisk" />
+		<BrowserCard title="Rock" icon="new" />
+		<BrowserCard title="Elektronisk" icon="new" />
 		<BrowserCard title="Opera" />
 		<BrowserCard title="Podcast" />
 		<BrowserCard title="Børnesange" />
@@ -21,9 +21,21 @@ import BrowserCard from './BrowserCard.astro'
 </section>
 
 <style>
-	article {
-		display: flex;
-		gap: 2rem;
-		flex-wrap: wrap;
+	.grid-containerb {
+		margin: 2rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+		gap: 1.5rem 2rem;
+
+		/* hide wrapping rows */
+		grid-template-rows: repeat(3, min-content);
+		grid-auto-rows: 0;
+		overflow: hidden;
+	}
+
+	h1 {
+		margin: 2rem;
+		font-weight: 700;
+		font-size: 22px;
 	}
 </style>
