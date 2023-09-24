@@ -7,8 +7,9 @@ const { search } = Astro.props
 	<div>
 		<img src="/icons/backg-btn.svg" alt="back button" />
 		<img src="/icons/forwardg-btn.svg" alt="forward button" />
+		{search === 'true' && <input type="text" placeholder="Hvad vil du lytte til?" />}
 	</div>
-	{search === 'true' && <input type="text" />}
+
 	<div>
 		<a href="/#">Tilmeld dig</a>
 		<Button variant="primary" size="large">Log på</Button>
@@ -22,11 +23,35 @@ const { search } = Astro.props
 		justify-content: space-between;
 		align-items: center;
 		padding: 0.8rem;
+		border-radius: 15px 15px 0 0;
 	}
 
 	.header div {
 		display: flex;
 		gap: 1.5rem;
 		align-items: center;
+	}
+
+	a {
+		color: #a7a7a7;
+		font-size: 16px;
+		min-width: fit-content;
+	}
+
+	input {
+		border-radius: 20px;
+		min-width: 15rem;
+		background-color: #242424;
+		border: 1px solid white;
+		color: white;
+		padding: 0.5rem;
+	}
+
+	input::placeholder {
+		font-size: 14px;
+	}
+
+	img {
+		width: 2%;
 	}
 </style>

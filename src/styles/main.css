@@ -71,12 +71,11 @@ button {
 
 .sectiontemp {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 400px 1fr;
+	min-width: 100vw;
 }
 
-/*INDEX
-----------------*/
-
-.playlist {
-	flex-grow: 1;
+.headertemp {
+	display: flex;
+	flex-direction: column;
 }
